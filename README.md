@@ -4,7 +4,7 @@
 
 # React-emotion-boilerplate
 
-> emotion.js The Next Generation of CSS-in-JS
+> [emotion.js](https://emotion.sh/) The Next Generation of CSS-in-JS
 
 Benifits of emotion js over regular css is covered in depth in this article =>[ It has huge performance benifits over regular styled componenets ](https://medium.com/@tkh44/emotion-ad1c45c6d28b)
 
