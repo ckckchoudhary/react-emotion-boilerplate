@@ -1,4 +1,6 @@
+/** @jsx jsx */
 import React from 'react';
+import { jsx } from '@emotion/core';
 import * as LoginStyles from './Login.style';
 
 export default class LoginComponent extends React.Component {
@@ -15,26 +17,26 @@ export default class LoginComponent extends React.Component {
     }
     render() {
         return (
-            <div className={LoginStyles.LoginPage}>
-                <div className={LoginStyles.loginForm}>
+            <div css={LoginStyles.LoginPage}>
+                <div css={LoginStyles.loginForm}>
                     {this.state.shouldShowSignup &&
                         <form >
-                            <input type="text" placeholder="name" className={LoginStyles.formInput} />
-                            <input type="password" placeholder="password" className={LoginStyles.formInput} />
-                            <input type="text" placeholder="email address" className={LoginStyles.formInput} />
-                            <button className={LoginStyles.formButton}>create</button>
-                            <p className={LoginStyles.formMessage}>Already registered? 
-                                <a href="#" className={LoginStyles.formMessageLinks} onClick={this.toggleSignup}> Sign In</a>
+                            <input type="text" placeholder="name" css={LoginStyles.formInput} />
+                            <input type="password" placeholder="password" css={LoginStyles.formInput} />
+                            <input type="text" placeholder="email address" css={LoginStyles.formInput} />
+                            <button css={LoginStyles.formButton}>create</button>
+                            <p css={LoginStyles.formMessage}>Already registered? 
+                                <a href="#" css={LoginStyles.formMessageLinks} onClick={this.toggleSignup}> Sign In</a>
                             </p>
                         </form>
                     }
                     {!this.state.shouldShowSignup &&
                         <form >
-                            <input type="text" placeholder="username" className={LoginStyles.formInput} />
-                            <input type="password" placeholder="password" className={LoginStyles.formInput} />
-                            <button className={LoginStyles.formButton}>login</button>
-                            <p className={LoginStyles.formMessage}>Not registered?
-                                <a className={LoginStyles.formMessageLinks} href="#" onClick={this.toggleSignup}> Create an account</a>
+                            <input type="text" placeholder="username" css={LoginStyles.formInput} />
+                            <input type="password" placeholder="password" css={LoginStyles.formInput} />
+                            <button css={LoginStyles.formButton}>login</button>
+                            <p css={LoginStyles.formMessage}>Not registered?
+                                <a css={LoginStyles.formMessageLinks} href="#" onClick={this.toggleSignup}> Create an account</a>
                             </p>
                         </form>
                     }
