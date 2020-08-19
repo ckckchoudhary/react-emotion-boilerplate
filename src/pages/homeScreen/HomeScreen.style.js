@@ -1,6 +1,6 @@
-import { css } from 'emotion';
+import { css } from '@emotion/core';
 
-export const HomePageContainer = css `
+export const HomePageContainer = css`
   background: #dedede;
   height:100vh;
   background: #76b852; /* fallback for old browsers */
